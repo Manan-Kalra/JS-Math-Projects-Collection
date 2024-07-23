@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <title>Biggest Among 2 Numbers</title>
+    <style>
+
+        body {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            font-family: Algerian;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        input[type=text] {
+            background-color: rgb(250, 251, 252);
+            border-color: rgb(223, 225, 230);
+            color: rgb(9, 30, 66);
+            cursor: text;
+            border-radius: 3px;
+            border-width: 2px;
+            border-style: solid;
+            box-sizing: border-box;
+            font-size: 18px;
+            transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+            line-height: 1.42857;
+            padding: 8px 6px;
+            height: 50px;
+            width: 400px;
+        }
+        
+        :focus {
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(76, 154, 255);
+        }
+        
+            }       
+    </style>
+</head>
+<body>
+    <h1>Biggest Among 2 Numbers</h1>
+    <hr />
+    <input type="text" placeholder="Value 1" id="Value1"><br /><br />
+    <input type="text" width="600" placeholder="Value 2" id="Value2"><br /><br /><br />
+    <input type="button" value="See which of the two numbers is bigger" onclick="ComparingTwoNumbers()"><br /><br />
+    
+    <input type="text" width="600" value="Result" id="Result"><br /><br /><br />
+    <script>
+        function ComparingTwoNumbers() {
+
+            var a = parseInt($('#Value1').val());
+            console.log(a);
+            var b = parseInt($('#Value2').val());
+            console.log(b);
+
+            if (a > b) {
+                $('#Result').val("Value 1 is greater than Value 2; " + a + " > " + b)
+            }
+
+            else if (b > a){
+                $('#Result').val("Value 2 is greater than Value 1; " + b + " > " + a)
+            }
+
+            else{
+                $('#Result').val("Value 1 is equal to Value 2; " + a + " = " + b)
+            }
+        }
+    </script>
+</body>
+</html>

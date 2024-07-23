@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <title>Finding Odd or Even Numbers</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            font-family: Algerian;
+            font-weight: 400;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Finding Odd or Even Numbers</h1>
+    <hr />
+    <input type="text" id="Value1"><br /><br /><br />
+    <input type="button" id="Response" value="Check if Number is odd or even" onclick="checkifnumberisoddoreven()"><br />
+
+    <script>
+        function checkifnumberisoddoreven() {
+            var a = parseInt($('#Value1').val());
+
+            if (a % 2 == 0)
+                document.write("It is an even number");
+            else
+                document.write("It is an odd number");
+        }
+    </script>
+</body>
+</html>

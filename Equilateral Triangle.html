@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Equilateral Triangle</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            font-family: Algerian;
+            font-weight: 400;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Equilateral Triangle of Numbers/Stars</h1>
+    <hr />
+    <script>
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write(j + "&nbsp");
+
+            }
+            document.write("<br/>");
+        }
+
+
+        n = 4;
+
+        for (i = 1; i <= 4; i++) {
+            for (j = 1; j <= n; j++) {
+                document.write(j + "&nbsp");
+            }
+            n--;
+            document.write("<br/>");
+        }
+        document.write("<br/>" + "<br/>");
+
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write("*" + "&nbsp");
+
+            }
+            document.write("<br/>");
+        }
+
+
+        n = 4;
+
+        for (i = 1; i <= 4; i++) {
+            for (j = 1; j <= n; j++) {
+                document.write("*" + "&nbsp");
+            }
+            n--;
+            document.write("<br/>");
+        }
+
+    </script>
+</body>
+</html>

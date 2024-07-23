@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Swapping JS Variable Values</title>
+    <style>
+        body {
+            background-color:aliceblue;
+        }
+        h1{
+            font-family:Algerian;
+            font-weight:400;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Swapping Values</h1>
+    <hr />
+    <center>
+        <h2 style="text-align:center;">Value 1:</h2><br /><input type="text" id="Value1"><br />
+        <h2 style="text-align:center;">Value 2:</h2><br /><input type="text" id="Value2"><br /><br />
+        <input style="font-size:20px;" type="button" id="SwapBtn" value="Swap Numbers" onclick="SwapNumbers()"><br /><br />
+        <hr />
+        <br />
+    </center>
+    <script>
+
+        function SwapNumbers() {
+            var a = $('#Value1').val();
+            console.log(a);
+            var b = $('#Value2').val();
+            var c = a;
+            a = parseInt(b);
+            b = parseInt(c);
+            $('#Value1').val(a);
+            $('#Value2').val(b);
+
+            
+        }
+    </script>
+</body>
+</html>

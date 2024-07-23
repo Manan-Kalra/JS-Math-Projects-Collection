@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Sum of Even Numbers to 50</title>
+    <style>
+
+        body {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            font-family: Algerian;
+            font-weight: 400;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sum of Even Numbers to "n"</h1>
+    <hr />
+    <center>
+        <h3>Enter a number. The computer will calculate the sum of all even numbers till that value.</h3>
+        <input type="text" id="UserNumber" placeholder="Enter your number here" style="font-size:20px; padding:10px;" /><br /><br />
+        <input type="button" id="StartBtn" onclick="startcalculation()" value="Add!" style="font-size: 20px; padding: 10px; width:200px;" />
+    </center>
+    
+    <script>
+        var number_g, sum = 0;
+
+        function startcalculation() { 
+
+            number_g = parseInt($('#UserNumber').val());
+
+            for (i = 0; i <= number_g; i += 2) {
+                document.write(i + "<br>");
+                sum = sum + i;
+            }
+
+            document.write("<hr>" + "The sum of all even numbers upto " + number_g + " is " + sum);
+        };
+        
+    </script>
+</body>
+</html>

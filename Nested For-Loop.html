@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Nested For-Loop</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            font-family: Algerian;
+            font-weight: 400;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Triangle of Numbers/Stars</h1>
+    <hr />
+    <script>
+        for (i = 1; i <= 4; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write("*");
+
+            }
+            document.write("<br/>");
+        }
+
+        document.write("<hr/>");
+
+        for (i = 1; i <= 4; i++) {
+            for (j = 4; j >= i; j--) {
+                document.write("*");
+
+            }
+            document.write("<br/>");
+        }
+        document.write("<hr/>");
+
+        for (i = 1; i <= 4; i++) {
+            for (j = 4; j >= i; j--) {
+                document.write(j + "&nbsp");
+
+            }
+            document.write("<br/>");
+        }
+
+        document.write("<hr/>");
+
+        for (i = 1; i <= 4; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write(j + "&nbsp");
+
+            }
+            document.write("<br/>");
+        }
+
+        document.write("<hr/>");
+
+        n = 4;
+
+        for (i = 1; i <= 4; i++) {
+            for (j = 1; j <= n; j++) {
+                document.write(j + "&nbsp");
+            }
+            n--;
+            document.write("<br/>");
+        }
+
+        document.write("<hr/>");
+
+        sum = 1;
+
+        for (i = 1; i <= 4; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write(sum + "&nbsp");
+                sum = sum + 1;
+            }
+
+            document.write("<br/>");
+        }
+
+        document.write("<hr/>");
+
+        sum = 1;
+
+        for (i = 1; i <= 4; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write(sum + "&nbsp");
+
+            }
+            sum = sum + 1;
+            document.write("<br/>");
+        }
+        document.write("<hr/>");
+
+        n = 10;
+
+        for (i = 1; i <= 10; i++) {
+            for (j = 1; j <= n; j++) {
+                document.write("&nbsp");
+            }
+            n--;
+            
+            for (l = 1; l <= i; l++) {
+                document.write("*" + "&nbsp");
+
+            }
+            document.write("<br/>");
+        }
+
+        document.write("<hr/>");
+
+        n = 10;
+
+        for (i = 1; i <= 10; i++) {
+            for (j = 1; j <= n; j++) {
+                document.write("&nbsp");
+            }
+            n--;
+
+            for (l = 1; l <= i; l++) {
+                document.write("*");
+
+            }
+            document.write("<br/>");
+        }
+
+        document.write("<hr/>");
+
+    </script>
+</body>
+</html>
